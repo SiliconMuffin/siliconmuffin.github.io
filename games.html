@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Игры Silicon Muffin.">
+  <title>Игры — Silicon Muffin</title>
+  <link rel="icon" type="image/png" href="/assets/muffin.png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="/index.html" aria-label="Silicon Muffin — главная">silicon muffin</a>
+    <nav aria-label="Основная навигация">
+      <a href="/index.html" data-copy="navHome">Главная</a>
+      <a class="active" href="/games.html" data-copy="navGames">Игры</a>
+      <a href="/about.html" data-copy="navAbout">Студия</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-button" id="themeButton" type="button" aria-label="Включить тёмную тему" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☾</span></button>
+      <button class="language-button" id="languageButton" type="button" aria-label="Switch to English" aria-pressed="false">RU</button>
+    </div>
+  </header>
+
+  <main class="content-main">
+    <section class="page-intro">
+      <p class="eyebrow">SILICON MUFFIN</p>
+      <h1 data-copy="gamesHeading">Игры</h1>
+      <p class="intro" data-copy="gamesIntro">Истории, которые мы создаём.</p>
+    </section>
+    <section class="project-list" aria-label="Проекты">
+      <article class="project-row">
+        <div>
+          <h2>Applejack Clicker</h2>
+          <p data-copy="applejackDescription">Приключение в Эквестрии</p>
+        </div>
+        <span class="project-status" data-copy="inDevelopment">В разработке</span>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark" href="#top">silicon muffin</a>
+    <span>© <span id="currentYear"></span> Silicon Muffin</span>
+  </footer>
+</body>
+</html>

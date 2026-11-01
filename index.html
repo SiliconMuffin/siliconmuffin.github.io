@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Silicon Muffin — независимая игровая студия. Think Free.">
+  <title>Silicon Muffin — Think Free.</title>
+  <link rel="icon" type="image/png" href="/assets/muffin.png">
+  <link rel="preload" href="/assets/muffin.png" as="image" type="image/png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="wordmark" href="/index.html" aria-label="Silicon Muffin — главная">silicon muffin</a>
+    <nav aria-label="Основная навигация">
+      <a class="active" href="/index.html" data-copy="navHome">Главная</a>
+      <a href="/games.html" data-copy="navGames">Игры</a>
+      <a href="/about.html" data-copy="navAbout">Студия</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-button" id="themeButton" type="button" aria-label="Включить тёмную тему" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☾</span></button>
+      <button class="language-button" id="languageButton" type="button" aria-label="Switch to English" aria-pressed="false">RU</button>
+    </div>
+  </header>
+
+  <main class="home-main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <h1 id="heroTitle">Think Free.</h1>
+        <a class="text-link" href="/games.html"><span data-copy="seeGames">Смотреть игры</span><span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art">
+        <img src="/assets/muffin.png" alt="Фиолетовый маффин Silicon Muffin" width="520" height="520">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="currentYear"></span> Silicon Muffin</span>
+  </footer>
+</body>
+</html>
