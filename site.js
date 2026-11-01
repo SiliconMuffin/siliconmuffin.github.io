@@ -67,17 +67,17 @@ function setLanguage(language) {
   themeButton.setAttribute("aria-label", document.documentElement.dataset.theme === "dark" ? text.themeToLight : text.themeToDark);
 
   try {
-    localStorage.setItem("siliconMuffinLanguage", selected);
+    localStorage.setItem("siliconMuffinLanguage_v2", selected);
   } catch (error) {
     // Language selection still works without browser storage.
   }
 }
 
-let savedLanguage = "ru";
+let savedLanguage = "en";
 try {
-  savedLanguage = localStorage.getItem("siliconMuffinLanguage") || "ru";
+  savedLanguage = localStorage.getItem("siliconMuffinLanguage_v2") || "en";
 } catch (error) {
-  savedLanguage = "ru";
+  savedLanguage = "en";
 }
 
 setLanguage(savedLanguage);
